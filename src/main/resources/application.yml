@@ -9,8 +9,12 @@ spring:
     driver-class-name: org.postgresql.Driver
 
   flyway:
-    enabled: true
+    enabled: false
+    url: jdbc:postgresql://localhost:5432/onefeed_user_db?sslmode=disable
+    user: postgres
+    password: 123
     locations: classpath:db/migration
+    baseline-on-migrate: true
 
   jpa:
     hibernate:
