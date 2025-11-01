@@ -19,9 +19,9 @@ public class User {
     private String username;
 
     @Column(name = "full_name", nullable = false)
-    private String full_name;
+    private String fullName;
 
-    @Column(name = "password", nullable = false, length = 255)
+    @Column(name = "password", nullable = false)
     private String password;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
