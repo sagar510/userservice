@@ -1,12 +1,14 @@
 package com.onefeed.userservice.models;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Data;
 
 import java.util.List;
 
 @Entity
 @Data
+@Builder
 @Table(name = "users")
 public class User {
 
