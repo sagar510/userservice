@@ -22,7 +22,6 @@ public class UserController {
 
     @PostMapping("/users")
     public ResponseEntity<Void> createuser(@RequestBody UserDtoRequest request){
-        System.out.println("Incoming request: " + request);
         User user = userDtoMapper.toEntity(request);
 
         // Save entity
